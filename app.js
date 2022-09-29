@@ -42,9 +42,27 @@
 
 // console.log(progressiveSum(3));
 
-function calcTime(seconds) {
-    return seconds / 60;
-    let timerSeconds = seconds % 60;
-}
+// function calcTime(seconds) {
+//     let timerMinutes = Math.floor(seconds / 60);
+//     let timerSeconds = seconds % 60;
 
-console.log(calcTime(180));
+//     if (timerMinutes.toString().length === 1) {
+//         timerMinutes = '0' + timerMinutes
+//     }
+
+//     return  timerMinutes + ':' + timerSeconds
+// }
+
+// console.log(calcTime(500));
+
+// function getMax(arr) {
+//     let max = arr[0];
+//     for (let i = 0; i < arr.length; ++i) {
+//         if (arr[i] > max) {
+//             max = arr[i]
+//         }
+//     }
+//     return max;
+// }
+
+// console.log(getMax([-100, -200, 3]));
