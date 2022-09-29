@@ -66,3 +66,22 @@
 // }
 
 // console.log(getMax([-100, -200, 3]));
+
+
+// function reverseString(str) {
+//     let reversedString = '';
+//     for (let i = 0; i < str.length; ++i) {
+//         //This is how you loop through every character in a string
+//         reversedString = str[i] + reversedString;
+//     }
+
+//     return reversedString;
+// }
+
+// console.log(reverseString('Hector'));
+
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(reverseString('abc'));
