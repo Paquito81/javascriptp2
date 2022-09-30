@@ -80,8 +80,43 @@
 
 // console.log(reverseString('Hector'));
 
-function reverseString(str) {
-    return str.split('').reverse().join('');
+// function reverseString(str) {
+//     return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString('Hector '));
+
+// function convertToZeros(arr) {
+//     return new Array(arr.length).fill(0);
+// }
+
+
+// console.log(convertToZeros([1, 2, 3]));
+
+// function convertToZeros(arr) {
+//     return arr.map(elem => {
+//         return 0
+//     })
+// }
+
+// console.log(convertToZeros([1, 2, 3, 4,5]));
+// 
+
+// function removeApples(arr) {
+//     return arr.filter(elem => elem === 'Apple')
+   
+// }
+
+// console.log(removeApples(['Banana', 'Apple', 'Orange', 'Apple']));
+
+function filterOutFalsy(arr) {
+    let truthyArr = [];
+    for (let i = 0; i < arr.length; ++i) {
+        console.log(arr[i])
+        if (!!arr[i] === true) {
+            truthyArr.push(arr[i]);
+        }
+    }
 }
 
-console.log(reverseString('abc'));
+console.log(filterOutFalsy(['', NaN, 500, null, false, 0]));
