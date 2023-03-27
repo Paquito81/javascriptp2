@@ -117,49 +117,57 @@
  * Question 6. Calculate the time
  * Given the number in seconds, return this number in mm:ss format.
  *  
+ * calcTime(66) -> '01:06'
+ * calcTime(50) -> '00:50'
+ * calcTime(300) -> '05:00'
+ * 
  */
 
 // function calcTime(seconds) {
-//     let timerMinutes = Math.floor(seconds / 60);
-//     let timerSeconds = seconds % 60;
+//    let timerMinutes =  Math.floor(seconds / 60);
+//    let timerSeconds = seconds % 60;
 
-//     if (timerMinutes.toString().length === 1) {
-//         timerMinutes = '0' + timerMinutes
-//     }
+//    if (timerMinutes.toString().length === 1) {
+//       timerMinutes = '0' + timerMinutes;
+//    }
 
-//     return  timerMinutes + ':' + timerSeconds
+//    return timerMinutes + ':' + timerSeconds;
 // }
 
 // console.log(calcTime(66));
 // console.log(calcTime(50));
-// console.log(calcTime(300));
-
+// console.log(calcTime(500));
 
 /**
  * Question 7. Find the largest number
- * Given an array of numbers, return the largest number of that array
+ * Given an array of numbers, return the largest number of that array 
  * 
- * getMax([5, 100, 0]) ->100
- * getMax([12, 10 ,-20]) -> 12
- * getMaxl([-300, -100, -200]) -> -100
+ * getMax([5, 100, 0]) -> 100
+ * getMax([12, 10, -20]) -> 12
+ * getMax([-300, -100, -200]) -> -100
  */
 
-function getMax(seconds) {
-    let timerMinutes = Math.floor(seconds / 60);
-    let timerSeconds = seconds % 60;
 
-    if (timerMinutes.toString().length === 1) {
-        timerMinutes = '0' + timerMinutes;
+// function getMax(arr) {
+//     for (let i = 0; i < arr.length; ++i) {
+//         console.log(arr[i]);
+//     }
+// }
+
+// console.log(getMax([-100, -200, -300]));
+function getMax(arr) {
+    let max = arr[0];
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
     }
-    return timerMinutes + ':' + timerSeconds;
+    return max;
 }
 
-console.log(getMax([-10]));
-
-
-// console.log(getMax([-100, -200, 3]));
-
-
+console.log(getMax([5, 100, 0]));
+console.log(getMax([12, 10, -20]));
+console.log(getMax([-100, -200, -300]));
 // function reverseString(str) {
 //     let reversedString = '';
 //     for (let i = 0; i < str.length; ++i) {
